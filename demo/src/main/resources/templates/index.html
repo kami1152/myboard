@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel = "stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            gap:50px;
+        }
+
+        #loginForm {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button-container {
+            padding-left: 20px;
+            padding-top: 20px;
+            gap: 10px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loginForm">
+        <h2 class="login-title">Toyproject107</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+        </form>
+        <div class="button-container">
+            <button type="button" class="loginButton" onclick="login()">Login</button>
+            <button type="button" class="registerButton" onclick="redirectToIndex2()">Register</button>
+        </div>
+        <div id="welcomeMessage" style="display: none; margin-top: 20px;">
+            <p>Welcome, <span id="usernameDisplay"></span>!</p>
+        </div>
+    </div>
+    <script src="/js/_Login.js">
+    </script>
+    <script src="js/_Register.js">
+    </script>
+</body>
+
+</html>
